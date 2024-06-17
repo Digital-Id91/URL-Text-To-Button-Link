@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "URL to Button Converter",
+  "version": "1.0",
+  "description": "Converts specific URL text into clickable buttons",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_scripts.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
